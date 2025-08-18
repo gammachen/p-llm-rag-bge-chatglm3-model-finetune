@@ -1,0 +1,7 @@
+streamlit
+modelscope
+faiss-cpu
+transformers
+langchain
+pymupdf
+sentence-transformers
