@@ -4,7 +4,8 @@ import numpy as np
 
 class BGEM3Embedder:
     def __init__(self):
-        self.model_id = "BAAI/bge-m3"
+        # self.model_id = "BAAI/bge-m3"
+        self.model_id = "BAAI/bge-small-zh-v1.5"
         self.model = SentenceTransformer(self.model_id)
     
     def embed_texts(self, texts):
