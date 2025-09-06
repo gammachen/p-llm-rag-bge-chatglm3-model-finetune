@@ -1,0 +1,16 @@
+﻿工具：notepad++
+
+navicat备份数据库：
+
+方法1：
+
+a.右键选择Dump SQL File  -> 导出live.sql -> 使用notepad和notepad++分别查看 live.sql
+b.选择要导入的数据库（注意是空数据库，或者是不存在需要保存数据的数据库，因为有DROP TABLE动作，导入时会删除重名的表和数据）
+c.邮件选择Execute SQL File -> 选择live.sql文件 ->执行导入操作
+
+
+方法2：
+
+a.邮件选择源数据库Data Transfer...
+b.确认source源数据库以及相关的表
+c.确认target目标数据库

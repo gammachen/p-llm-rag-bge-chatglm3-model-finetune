@@ -1,0 +1,142 @@
+2025/06/22 14:30:00 - 生成随机数.0 - distribution activated
+2025/06/22 14:30:00 - 生成随机数.0 - Starting allocation of buffers & new threads...
+2025/06/22 14:30:00 - 生成随机数.0 - Step info: nrinput=0 nroutput=1
+2025/06/22 14:30:00 - 生成随机数.0 - output rel. is  1:1
+2025/06/22 14:30:00 - 生成随机数.0 - Found output rowset [生成随机数.0 - 表输出.0]
+2025/06/22 14:30:00 - 生成随机数.0 - Finished dispatching
+2025/06/22 14:30:00 - 表输出.0 - distribution activated
+2025/06/22 14:30:00 - 表输出.0 - Starting allocation of buffers & new threads...
+2025/06/22 14:30:00 - 表输出.0 - Step info: nrinput=1 nroutput=0
+2025/06/22 14:30:00 - 表输出.0 - Got previous step from [表输出] #0 --> 生成随机数
+2025/06/22 14:30:00 - 表输出.0 - input rel is 1:1
+2025/06/22 14:30:00 - 表输出.0 - Found input rowset [生成随机数.0 - 表输出.0]
+2025/06/22 14:30:00 - 表输出.0 - Finished dispatching
+2025/06/22 14:30:00 - kettleorgcnlog - New database connection defined
+2025/06/22 14:30:00 - kettleorgcnlog - Auto commit off
+2025/06/22 14:30:00 - kettleorgcnlog - Auto commit off
+2025/06/22 14:30:00 - kettleorgcnlog - launch DDL statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - LOCK TABLES k_log_trans WRITE
+2025/06/22 14:30:00 - kettleorgcnlog - 1 statement executed
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_trans (ID_BATCH, CHANNEL_ID, TRANSNAME, STATUS, LINES_READ, LINES_WRITTEN, LINES_UPDATED, LINES_INPUT, LINES_OUTPUT, LINES_REJECTED, ERRORS, STARTDATE, ENDDATE, LOGDATE, DEPDATE, REPLAYDATE, LOG_FIELD) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Connection to database closed!
+2025/06/22 14:30:00 - 21 - Initialising 2 steps...
+2025/06/22 14:30:00 - 生成随机数.0 - Released server socket on port 0
+2025/06/22 14:30:00 - 表输出.0 - Released server socket on port 0
+2025/06/22 14:30:00 - localhost3357 - New database connection defined
+2025/06/22 14:30:00 - localhost3357 - launch DDL statement: 
+2025/06/22 14:30:00 - localhost3357 - set names utf8
+2025/06/22 14:30:00 - localhost3357 - 1 statement executed
+2025/06/22 14:30:00 - localhost3357 - Executed connect time SQL statements:
+2025/06/22 14:30:00 - localhost3357 - set names utf8;
+2025/06/22 14:30:00 - 表输出.0 - Connected to database [localhost3357] (commit=1000)
+2025/06/22 14:30:00 - localhost3357 - Auto commit off
+2025/06/22 14:30:00 - 21 - Step [生成随机数.0] initialized flawlessly.
+2025/06/22 14:30:00 - 21 - Step [表输出.0] initialized flawlessly.
+2025/06/22 14:30:00 - 生成随机数.0 - Starting to run...
+2025/06/22 14:30:00 - 表输出.0 - Starting to run...
+2025/06/22 14:30:00 - 生成随机数.0 - Finished processing (I=0, O=0, R=1, W=1, U=0, E=0)
+2025/06/22 14:30:00 - 21 - Transformation has allocated 2 threads and 1 rowsets.
+2025/06/22 14:30:00 - 表输出.0 - Prepared statement : INSERT INTO kettle.testresource (id) VALUES ( ?)
+2025/06/22 14:30:00 - localhost3357 - Connection to database closed!
+2025/06/22 14:30:00 - 表输出.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0)
+2025/06/22 14:30:00 - kettleorgcnlog - New database connection defined
+2025/06/22 14:30:00 - kettleorgcnlog - Auto commit off
+2025/06/22 14:30:00 - kettleorgcnlog - Connection to database closed!
+2025/06/22 14:30:00 - kettleorgcnlog - New database connection defined
+2025/06/22 14:30:00 - kettleorgcnlog - Auto commit off
+2025/06/22 14:30:00 - kettleorgcnlog - Connection to database closed!
+2025/06/22 14:30:00 - kettleorgcnlog - New database connection defined
+2025/06/22 14:30:00 - kettleorgcnlog - Auto commit off
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transsteps (ID_BATCH, CHANNEL_ID, LOG_DATE, TRANSNAME, STEPNAME, STEP_COPY, LINES_READ, LINES_WRITTEN, LINES_UPDATED, LINES_INPUT, LINES_OUTPUT, LINES_REJECTED, ERRORS) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transsteps (ID_BATCH, CHANNEL_ID, LOG_DATE, TRANSNAME, STEPNAME, STEP_COPY, LINES_READ, LINES_WRITTEN, LINES_UPDATED, LINES_INPUT, LINES_OUTPUT, LINES_REJECTED, ERRORS) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Connection to database closed!
+2025/06/22 14:30:00 - kettleorgcnlog - New database connection defined
+2025/06/22 14:30:00 - kettleorgcnlog - Auto commit off
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Preparing statement: 
+2025/06/22 14:30:00 - kettleorgcnlog - INSERT INTO k_log_transchannel (ID_BATCH, CHANNEL_ID, LOG_DATE, LOGGING_OBJECT_TYPE, OBJECT_NAME, OBJECT_COPY, REPOSITORY_DIRECTORY, FILENAME, OBJECT_ID, OBJECT_REVISION, PARENT_CHANNEL_ID, ROOT_CHANNEL_ID) VALUES ( ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?,  ?)
+2025/06/22 14:30:00 - kettleorgcnlog - Connection to database closed!
+
+执行方式：采用java方式执行数据库trans转换
